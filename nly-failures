@@ -1,0 +1,20 @@
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m
+
+Failures:
+
+  1) ProductUpdateJob #perform updates products with scraped data and attaches images
+     [31mFailure/Error: expect(product1.title).to eq("update title from sample title")[0m
+     [31m[0m
+     [31m  expected: "update title from sample title"[0m
+     [31m       got: "Sample Product"[0m
+     [31m[0m
+     [31m  (compared using ==)[0m
+     [36m# ./spec/workers/product_update_worker_spec.rb:30:in `block (3 levels) in <main>'[0m
+
+Finished in 0.74184 seconds (files took 0.92038 seconds to load)
+[31m5 examples, 1 failure[0m
+
+Failed examples:
+
+[31mrspec ./spec/workers/product_update_worker_spec.rb:17[0m [36m# ProductUpdateJob #perform updates products with scraped data and attaches images[0m
+
